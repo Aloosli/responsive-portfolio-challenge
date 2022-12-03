@@ -3,7 +3,7 @@
   --section-color: white;
   --footer-color: black;
   --button-color: rgb(246, 116, 69);
-  --button-hover: #F6CD45;
+  --button-hover: #f6cd45;
   --button-active: rgb(57, 57, 233);
 }
 /* Universal Selectors */
@@ -13,11 +13,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 section {
-  height: 500px;
   background-color: var(--section-color);
 }
 .hero {
@@ -27,6 +26,7 @@ section {
   color: white;
   font-size: 40px;
 }
+
 footer {
   height: 500px;
   background-color: var(--footer-color);
@@ -49,25 +49,29 @@ li {
 h1 {
   font-weight: 800;
   font-size: 90px;
-  
+}
+h2 {
+  font-size: 50px;
+  padding-bottom: 60px;
 }
 p {
   font-weight: 300;
   font-size: 30px;
 }
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
 
 .logo {
+  height: 100px;
   margin-left: 80px;
-  height: auto;
-  max-width: 100%;
-  
 }
 .hero-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  
 }
 .hero-text {
   padding-top: 80px;
@@ -91,7 +95,6 @@ p {
 .button a {
   text-decoration: none;
   color: var(--section-color);
-  
 }
 
 .button:hover {
@@ -99,8 +102,49 @@ p {
 }
 .button:active {
   background-color: var(--button-active);
-
 }
 .socials {
-  padding-bottom: 200px;
+  padding-bottom: 70px;
+}
+.social-icons {
+  margin: 20px;
+}
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  align-items: center;
+}
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+.headshot {
+  width: 300px;
+  
+  
+}
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+.project-card {
+  background-color: var(--button-hover);
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(161, 160, 160);
+}
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+
 }
