@@ -1,5 +1,6 @@
+/* Variables */
 :root {
-  --hero-color: #77a3c4;
+  --hero-color: #668ba8;
   --section-color: white;
   --footer-color: black;
   --button-color: rgb(246, 116, 69);
@@ -16,20 +17,31 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section {
-  background-color: var(--section-color);
+
+h2 {
+  font-size: 50px;
+  padding-bottom: 40px;
 }
-.hero {
-  background-color: var(--hero-color);
-  padding: 20px;
-  height: 100vh;
-  color: white;
-  font-size: 40px;
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+p {
+  font-weight: 300;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  color: var(--section-color);
 }
 
-footer {
-  height: 500px;
-  background-color: var(--footer-color);
+/* Nav and logo */
+
+.logo {
+  height: 160px;
+  margin-left: 80px;
 }
 nav {
   display: flex;
@@ -41,43 +53,46 @@ ul {
   width: 500px;
   justify-content: space-around;
   font-size: 30px;
-}
-li {
-  width: 200px;
-  text-decoration: none;
-}
-h1 {
-  font-weight: 800;
-  font-size: 90px;
-}
-h2 {
-  font-size: 50px;
-  padding-bottom: 60px;
-}
-p {
-  font-weight: 300;
-  font-size: 30px;
-}
-.subtext {
-  font-size: 15px;
-  font-weight: 300;
+  margin-right: 80px;
 }
 
-.logo {
-  height: 100px;
-  margin-left: 80px;
+li {
+  text-decoration: none;
 }
+
+.hamburger {
+  display: none;
+}
+
+/* Hero Section */
+
+.hero {
+  background-color: var(--hero-color);
+  padding: 20px;
+  height: 100vh;
+  color: white;
+}
+
 .hero-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 80px;
 }
 .hero-text {
-  padding-top: 80px;
-  margin-left: 80px;
+  padding-top: 50px;
+
   margin-bottom: 200px;
 }
+.hero-text p {
+  padding-bottom: 50px;
+}
+h1 {
+  font-size: 90px;
+  padding-bottom: 50px;
+}
+
 .button {
   display: flex;
   flex-direction: column;
@@ -106,45 +121,219 @@ p {
 .socials {
   padding-bottom: 70px;
 }
-.social-icons {
-  margin: 20px;
-}
+
+/* About me section*/
+
 .sub-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 70vh;
   padding: 80px;
   align-items: center;
 }
-.sub-section-alternative {
+
+.information {
+  margin-left: px;
+}
+.about-me-paragraph {
+  font-weight: 600;
+}
+.about-me-h2 {
+  font-size: 80px;
+  color: var(--hero-color);
+}
+
+.headshot {
+  width: 300px;
+}
+
+/* Project section */
+
+#projects-title {
+  margin-left: 80px;
+  font-size: 80px;
+  color: var(--hero-color);
+}
+.project-grid-area {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+.subHeading {
+  background-color: var(--hero-color);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  height: 50px;
+  color: white;
+  font-size: 30px;
+  border-radius: 0 0 50px 50px;
+}
+
+#projects {
+  margin: 0 5%;
+
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "p1 p1 p1 "
+    "p2 p3 p4 "
+    "p2 p5 p5";
+}
+
+#project-1 {
+  grid-area: p1;
+  background-image: url("./images/prework.png");
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+#project-2 {
+  grid-area: p2;
+  background-image: url("./images/horiseon.png");
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+#project-3 {
+  grid-area: p3;
+  background-image: url("./images/02-run-buddy.jpg");
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+#project-4 {
+  grid-area: p4;
+  background-image: url("./images/02-portfolio-2.jpg");
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+#project-5 {
+  grid-area: p5;
+  background-image: url("./images/02-portfolio-3.jpg");
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: var(--section-color);
+
+  font-weight: 600;
+}
+
+/* Footer Section */
+footer {
+  background-color: var(--footer-color);
+  color: var(--section-color);
   text-align: center;
   padding: 80px;
 }
 
-.headshot-container {
-  display: flex;
-  align-items: center;
-}
-.headshot {
-  width: 300px;
-  
-  
-}
-.project-container {
-  display: flex;
-  justify-content: space-around;
-}
-.project-card {
-  background-color: var(--button-hover);
-  width: 300px;
-  height: 500px;
-  box-shadow: 5px 5px 20px rgb(161, 160, 160);
-}
-.project-image {
-  margin-top: 25px;
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
+/* Media queries */
 
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: var(--section-color);
+    font-size: 50px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    margin: 0;
+
+    margin: 0px;
+  }
+  ul.show {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 80px;
+    align-items: flex-start;
+  }
+  .logo {
+    display: none;
+  }
+  .headshot {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: var(--section-color);
+    font-size: 50px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  ul {
+    display: none;
+    margin: 0;
+
+    margin: 0px;
+  }
+  ul.show {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 80px;
+    align-items: flex-start;
+  }
+  .logo {
+    display: none;
+  }
+  .headshot {
+    width: 200px;
+  }
+
+  #projects {
+    margin: 0 5%;
+
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-areas:
+      "p1"
+      "p2"
+      "p3"
+      "p4"
+      "p5";
+  }
+  .subHeading {
+    border-radius: 0 0;
+  }
+  .hero-text {
+    padding-top: 80px;
+  
+    margin-bottom: 100px;
+  }
+  .hero-area {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .socials-wrapper {
+    display: flex;
+  }
+  .socials {
+    display: flex;
+  }
+  .social {
+    flex-direction: row;
+    padding: 20px;
+  }
 }
