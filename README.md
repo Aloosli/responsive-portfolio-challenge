@@ -27,5 +27,3 @@ To see it in action, click the badge!
 [![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://aloosli.github.io/responsive-portfolio-challenge/)
 
 ![Skill](https://img.shields.io/badge/Skill-Beginner-orange?labelColor=Blue&style=flat)
-
-[![GitHub tag](https://img.shields.io/github/tag/Aloosli/responsive-portfolio-challenge?include_prereleases=&sort=semver&color=blue)](https://github.com/Aloosli/responsive-portfolio-challenge/releases/)
