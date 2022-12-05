@@ -15,7 +15,7 @@ It is rather rough around the edges, i will continue to work on it and make impr
 
 ## Credits
 
-I got a lot of help from this tutorials
+I got a lot of help from this tutorial
 https://www.youtube.com/watch?v=-D6oTPA4vXc
 
 The cubes are from here
