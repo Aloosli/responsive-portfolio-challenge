@@ -17,10 +17,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-
 h2 {
   font-size: 50px;
   padding-bottom: 40px;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 h3 {
   font-size: 20px;
@@ -68,12 +68,14 @@ li {
 
 .hero {
   background-color: var(--hero-color);
+
   padding: 20px;
   height: 100vh;
   color: white;
 }
 
 .hero-area {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,8 +120,91 @@ h1 {
 .button:active {
   background-color: var(--button-active);
 }
+/* Socials Icons */
 .socials {
+  margin-bottom: 150px;
   padding-bottom: 70px;
+}
+/* Cube illustration */
+.hero-image {
+  position: relative;
+}
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+  transform: rotate(-25deg) skew(25deg);
+}
+.cube::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  background-color: blue;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+.cube::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  background-color: rgb(255, 0, 25);
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+#html {
+  left: -100px;
+  bottom: 120px;
+
+  background-image: url(./images/html-square.png);
+  background-size: cover;
+  background-color: var(--button-color);
+  box-shadow: -90px 80px 20px rgb(50 50 50/ 15%);
+}
+#html:before {
+  background-color: rgb(147, 69, 40);
+}
+
+#html:after {
+  background-color: rgb(246, 157, 125);
+}
+
+
+#css {
+  left: 40px;
+  bottom: 240px;
+  background-image: url("images/css-square.png");
+  background-size: cover;
+  background-color: rgb(71, 71, 231);
+  box-shadow: -100px 80px 20px rgb(50 50 50/ 15%);
+}
+
+#css:before {
+  background-color: rgb(52, 52, 122);
+}
+
+#css:after {
+  background-color: rgb(100, 100, 229);
+}
+#javascript {
+  left: 100px;
+  bottom: 65px;
+  background-image: url("images/javascript-square.png");
+  background-size: cover;
+  background-color: #f6cd45;
+  box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+}
+
+#javascript:before {
+  background-color: #b49633;
+}
+
+#javascript:after {
+  background-color: #f7e199;
 }
 
 /* About me section*/
@@ -136,7 +221,7 @@ h1 {
   margin-left: px;
 }
 .about-me-paragraph {
-  font-weight: 600;
+  font-weight: 300;
 }
 .about-me-h2 {
   font-size: 80px;
@@ -144,7 +229,8 @@ h1 {
 }
 
 .headshot {
-  width: 300px;
+  margin-top: 40px;
+  width: 400px;
 }
 
 /* Project section */
@@ -177,7 +263,8 @@ h1 {
 }
 
 #projects {
-  margin: 0 5%;
+  margin-left: 80px;
+  margin-right: 80px;
 
   display: grid;
   grid-template-rows: 200px 200px 200px;
@@ -192,28 +279,28 @@ h1 {
 #project-1 {
   grid-area: p1;
   background-image: url("./images/prework.png");
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
 }
 #project-2 {
   grid-area: p2;
   background-image: url("./images/horiseon.png");
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 50px;
 }
 #project-3 {
   grid-area: p3;
   background-image: url("./images/02-run-buddy.jpg");
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
 }
 #project-4 {
   grid-area: p4;
   background-image: url("./images/02-portfolio-2.jpg");
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
 }
 #project-5 {
   grid-area: p5;
   background-image: url("./images/02-portfolio-3.jpg");
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
   margin-bottom: 50px;
 }
 
@@ -266,6 +353,9 @@ footer {
   .headshot {
     width: 200px;
   }
+  .hero-image {
+    display: none;
+  }
 }
 @media only screen and (max-width: 600px) {
   .hamburger {
@@ -296,8 +386,8 @@ footer {
   .logo {
     display: none;
   }
-  .headshot {
-    width: 200px;
+  .headshot-container {
+    display: none;
   }
 
   #projects {
@@ -319,7 +409,7 @@ footer {
   }
   .hero-text {
     padding-top: 80px;
-  
+
     margin-bottom: 100px;
   }
   .hero-area {
