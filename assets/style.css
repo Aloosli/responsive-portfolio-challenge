@@ -14,17 +14,18 @@
   box-sizing: border-box;
 }
 body {
+  background: var(--button-hover);
   font-family: "Poppins", sans-serif;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: #333;
+  
 }
 /*Element selectors */
 h2 {
   font-size: 50px;
   padding-bottom: 40px;
-  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 h3 {
   font-size: 20px;
@@ -375,8 +376,11 @@ p {
   color: #fff;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 3em;
+}
+.contact {
+  color: #fff;
 }
 footer .wave {
   position: absolute;
